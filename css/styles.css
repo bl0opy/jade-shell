@@ -65,6 +65,7 @@ nav.scrolled {
     height: 50px;
     width: auto;
     transition: var(--transition-smooth);
+    filter: brightness(0) invert(1);
 }
 
 .logo-left:hover {
@@ -74,15 +75,15 @@ nav.scrolled {
 .logo-center {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-3px);
-    height: 55px;
+    transform: translateX(-50%) translateY(-8px);
+    height: 50px;
     width: auto;
     transition: var(--transition-smooth);
     display: block;
 }
 
 .logo-center:hover {
-    transform: translateX(-50%) translateY(-3px) scale(1.05);
+    transform: translateX(-50%) translateY(-8px) scale(1.05);
 }
 
 .logo {

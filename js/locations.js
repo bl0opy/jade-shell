@@ -5,19 +5,92 @@
 let map;
 const chicagoCenter = [41.8781, -87.6298]; // Chicago coordinates
 
+// Locations data
+const locationsData = [
+  {
+    "name": "Beatrix Market – Loop",
+    "address": "155 N Upper Stetson Ave, Chicago, IL",
+    "lat": 41.885871,
+    "lng": -87.622917
+  },
+  {
+    "name": "Beatrix Market – Streeterville",
+    "address": "671 N St Clair St, Chicago, IL",
+    "lat": 41.894501,
+    "lng": -87.622482
+  },
+  {
+    "name": "Swadesi Cafe",
+    "address": "328 S Jefferson St #120, Chicago, IL",
+    "lat": 41.876968,
+    "lng": -87.642433
+  },
+  {
+    "name": "Marriott Downtown Magnificent Mile",
+    "address": "540 N Michigan Ave, Chicago, IL",
+    "lat": 41.892430,
+    "lng": -87.624050
+  },
+  {
+    "name": "Marriott Marquis McCormick Place",
+    "address": "2121 S Prairie Ave, Chicago, IL",
+    "lat": 41.852264,
+    "lng": -87.619019
+  },
+  {
+    "name": "Sheraton Grand Chicago Riverwalk",
+    "address": "301 E North Water St, Chicago, IL",
+    "lat": 41.890579,
+    "lng": -87.617859
+  },
+  {
+    "name": "Bombay Eats / Bombay Wraps – Streeterville",
+    "address": "330 E Ohio St, Chicago, IL",
+    "lat": 41.892982,
+    "lng": -87.617058
+  },
+  {
+    "name": "Bombay Eats / Bombay Wraps – Loop",
+    "address": "122 N Wells St, Chicago, IL",
+    "lat": 41.883610,
+    "lng": -87.633980
+  },
+  {
+    "name": "Patel Brothers – Naperville",
+    "address": "1568 W Ogden Ave, Naperville, IL",
+    "lat": 41.780624,
+    "lng": -88.181419
+  },
+  {
+    "name": "Patel Brothers – Schaumburg",
+    "address": "430 W Higgins Rd, Schaumburg, IL",
+    "lat": 42.053539,
+    "lng": -88.084435
+  },
+  {
+    "name": "Patel Brothers – Niles",
+    "address": "9555 N Milwaukee Ave, Niles, IL",
+    "lat": 42.047207,
+    "lng": -87.827728
+  },
+  {
+    "name": "Bawarchi Biryani – Schaumburg",
+    "address": "766 S Roselle Rd, Schaumburg, IL",
+    "lat": 42.016720,
+    "lng": -88.079010
+  }
+];
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     loadLocations();
 });
 
-// Load locations from JSON file
-async function loadLocations() {
+// Load locations
+function loadLocations() {
     try {
-        const response = await fetch('locations.json');
-        const locations = await response.json();
-
-        initMap(locations);
-        renderLocationCards(locations);
+        initMap(locationsData);
+        renderLocationCards(locationsData);
     } catch (error) {
         console.error('Error loading locations:', error);
     }
