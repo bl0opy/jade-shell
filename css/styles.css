@@ -39,17 +39,17 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #000000;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     transition: var(--transition-smooth);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 nav.scrolled {
-    padding: 1rem 5%;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 5%;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
 }
 
 .nav-container {
@@ -58,12 +58,36 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.logo-left {
+    height: 50px;
+    width: auto;
+    transition: var(--transition-smooth);
+}
+
+.logo-left:hover {
+    transform: scale(1.05);
+}
+
+.logo-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: auto;
+    transition: var(--transition-smooth);
+}
+
+.logo-center:hover {
+    transform: translateX(-50%) scale(1.05);
 }
 
 .logo {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--pure-white);
     text-decoration: none;
     letter-spacing: -1px;
     transition: var(--transition-smooth);
@@ -81,7 +105,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-    color: var(--text-dark);
+    color: var(--pure-white);
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -516,11 +540,31 @@ footer {
 .social-links a {
     color: var(--pure-white);
     transition: var(--transition-smooth);
+    display: inline-block;
 }
 
 .social-links a:hover {
     color: var(--accent-gold);
     transform: scale(1.2);
+}
+
+.social-links img {
+    height: 32px;
+    width: 32px;
+    filter: brightness(0) invert(1);
+    transition: var(--transition-smooth);
+}
+
+.social-links a:hover img {
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(25deg);
+    transform: scale(1.1);
+}
+
+.team-image, .founder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 /* ========================================
