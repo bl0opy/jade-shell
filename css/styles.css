@@ -75,7 +75,7 @@ nav.scrolled {
 .logo-center {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(-20px);
     height: 50px;
     width: auto;
     transition: var(--transition-smooth);
@@ -140,7 +140,8 @@ nav.scrolled {
    ======================================== */
 
 .hero {
-    height: 100vh;
+    min-height: calc(100vh - 80px); /* subtract nav height (adjust 80px as needed) */
+    padding-top: 5rem;           /* extra space between nav and hero content */
     display: flex;
     align-items: center;
     justify-content: center;
