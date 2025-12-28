@@ -328,7 +328,7 @@ section.visible {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
@@ -420,6 +420,9 @@ section.visible {
     width: 100%;
     height: 250px;
     background: linear-gradient(135deg, var(--soft-purple), var(--accent-gold));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -80,15 +80,20 @@ function renderLocationCards(locations) {
         const card = document.createElement('div');
         card.className = 'location-card';
 
+        // If the location object provides an `image` property, use it as the
+        // background image for the image area. Otherwise fall back to the
+        // gradient + emoji placeholder.
+        const imageHtml = location.image
+            ? `<div class="location-image" style="background-image: url('${location.image}');"></div>`
+            : `<div class="location-image" style="background: linear-gradient(135deg, #E6D5F5, #D4AF37); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white;">📍</div>`;
+
         card.innerHTML = `
-            <div class="location-image" style="background: linear-gradient(135deg, #E6D5F5, #D4AF37); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white;">
-                📍
-            </div>
+            ${imageHtml}
             <div class="location-info">
                 <h3>${location.name}</h3>
                 <p><strong>📍 Address:</strong><br>${location.address}</p>
                 <div style="margin-top: 1.5rem;">
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}"
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=${location.name}"
                        target="_blank"
                        class="cta-button"
                        style="display: inline-block; padding: 0.8rem 1.5rem; font-size: 0.9rem; text-decoration: none;">
