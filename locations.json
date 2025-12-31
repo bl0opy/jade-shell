@@ -47,22 +47,6 @@
     "image": "assets/sheraton.jpg"
   },
   {
-    "name": "Bombay Eats / Bombay Wraps – Streeterville",
-    "address": "330 E Ohio St, Chicago, IL",
-    "lat": 41.892982,
-    "lng": -87.617058
-  ,
-    "image": "assets/bombay-street.jpg"
-  },
-  {
-    "name": "Bombay Eats / Bombay Wraps – Loop",
-    "address": "122 N Wells St, Chicago, IL",
-    "lat": 41.883610,
-    "lng": -87.633980
-  ,
-    "image": "assets/bombay-loop.png"
-  },
-  {
     "name": "Patel Brothers – Naperville",
     "address": "1568 W Ogden Ave, Naperville, IL",
     "lat": 41.780624,
@@ -93,5 +77,21 @@
     "lng": -88.079010
   ,
     "image": "assets/biryani-burg.jpg"
+  },
+  {
+    "name": "Bombay Eats / Bombay Wraps – Streeterville",
+    "address": "330 E Ohio St, Chicago, IL",
+    "lat": 41.892982,
+    "lng": -87.617058
+  ,
+    "image": "assets/bombay-street.jpg"
+  },
+  {
+    "name": "Bombay Eats / Bombay Wraps – Loop",
+    "address": "122 N Wells St, Chicago, IL",
+    "lat": 41.883610,
+    "lng": -87.633980
+  ,
+    "image": "assets/bombay-loop.png"
   }
 ]
