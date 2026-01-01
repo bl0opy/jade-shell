@@ -280,6 +280,35 @@ nav.scrolled {
    Section Styles
    ======================================== */
 
+.image-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* background image layer */
+.image-bg .image-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background: url('../assets/saffron-text-easy.png') center 10% / cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* content on top */
+.image-bg .section-container {
+    position: relative;
+    z-index: 1;
+}
+
+.image-bg .section-title {
+    color: #2C2C2C;
+}
+
+.image-bg .section-subtitle {
+    color: #2C2C2C;
+}
+   
 section {
     padding: 8rem 5%;
     opacity: 0;
