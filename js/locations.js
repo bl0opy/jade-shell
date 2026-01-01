@@ -85,7 +85,7 @@ function renderLocationCards(locations) {
         // folder (e.g. /assets/foo.jpg). Otherwise fall back to the gradient
         // + emoji placeholder.
         const imageUrl = location.image
-            ? (location.image.startsWith('/') || location.image.startsWith('http') ? location.image : '/' + location.image)
+            ? (location.image.startsWith('/') || location.image.startsWith('http') ? location.image : '../' + location.image)
             : null;
 
         const imageHtml = imageUrl
