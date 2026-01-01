@@ -1,25 +1,23 @@
 [
   {
     "name": "Beatrix Market – Loop",
-    "address": "155 N Wacker Dr, Chicago, IL 60606",
-    "lat": 41.885871,
-    "lng": -87.622917,
+    "address": "155 N Wacker Dr, Chicago, IL",
+    "lat": 41.8847,
+    "lng": -87.6363,
     "image": "assets/beatrix-loop.jpg"
   },
   {
     "name": "Beatrix Market – Streeterville",
     "address": "671 N St Clair St, Chicago, IL",
-    "lat": 41.894501,
-    "lng": -87.622482
-    ,
+    "lat": 41.8943633,
+    "lng": -87.6225466,
     "image": "assets/beatrix-street.jpg"
   },
   {
     "name": "Swadesi Cafe",
     "address": "328 S Jefferson St #120, Chicago, IL",
     "lat": 41.876968,
-    "lng": -87.642433
-  ,
+    "lng": -87.642433,
     "image": "assets/swadesi.png"
   },
   {
@@ -34,7 +32,7 @@
     "name": "Marriott Marquis McCormick Place",
     "address": "2121 S Prairie Ave, Chicago, IL",
     "lat": 41.852264,
-    "lng": -87.619019
+    "lng": -87.619019 
   ,
     "image": "assets/marquis.png"
   },
@@ -49,16 +47,16 @@
   {
     "name": "Patel Brothers – Naperville",
     "address": "1568 W Ogden Ave, Naperville, IL",
-    "lat": 41.780624,
-    "lng": -88.181419
+    "lat": 41.768476,
+    "lng": -88.184781
   ,
     "image": "assets/patel-naper.png"
   },
   {
     "name": "Patel Brothers – Schaumburg",
-    "address": "430 W Higgins Rd, Schaumburg, IL",
-    "lat": 42.053539,
-    "lng": -88.084435
+    "address": "830 W Golf Rd, Schaumburg, IL",
+    "lat": 42.049125,
+    "lng": -88.101489
   ,
     "image": "assets/patel-burg.jpg"
   },
@@ -66,22 +64,22 @@
     "name": "Patel Brothers – Niles",
     "address": "9555 N Milwaukee Ave, Niles, IL",
     "lat": 42.047207,
-    "lng": -87.827728
+    "lng": -87.827728 
   ,
     "image": "assets/patel-niles.png"
   },
   {
     "name": "Bawarchi Biryani – Schaumburg",
-    "address": "766 S Roselle Rd, Schaumburg, IL",
-    "lat": 42.016720,
-    "lng": -88.079010
+    "address": "855 E Schaumburg Rd, Schaumburg, IL",
+    "lat": 42.027459,
+    "lng": -88.059389
   ,
     "image": "assets/biryani-burg.jpg"
   },
   {
     "name": "Bombay Eats / Bombay Wraps – Streeterville",
     "address": "330 E Ohio St, Chicago, IL",
-    "lat": 41.892982,
+    "lat": 41.892982, 
     "lng": -87.617058
   ,
     "image": "assets/bombay-street.jpg"
@@ -89,7 +87,7 @@
   {
     "name": "Bombay Eats / Bombay Wraps – Loop",
     "address": "122 N Wells St, Chicago, IL",
-    "lat": 41.883610,
+    "lat": 41.883610, 
     "lng": -87.633980
   ,
     "image": "assets/bombay-loop.png"
