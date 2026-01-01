@@ -16,7 +16,7 @@ function initMap() {
     }).addTo(map);
 
     // Load location data
-    fetch('/locations.json')
+    fetch('../locations.json')
         .then(res => res.json())
         .then(locations => {
             // Add markers to map
