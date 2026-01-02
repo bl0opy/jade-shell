@@ -606,7 +606,8 @@ section.visible {
 }
 
 .story-content h2 {
-    font-size: 3rem;
+    font-size: 2rem; 
+    /* slightly smaller text */
     margin-bottom: 2rem;
     color: var(--text-dark);
 }
